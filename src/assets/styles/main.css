@@ -1,0 +1,40 @@
+/* 全局样式：CSS 变量统一管理颜色，改主题只改这一处 */
+:root {
+  --color-primary: #185FA5;
+  --color-primary-dark: #0C447C;
+  --color-accent: #E1F5EE;
+  --color-text: #2C2C2A;
+  --color-text-muted: #5F5E5A;
+  --color-bg: #F1EFE8;
+  --color-surface: #FFFFFF;
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
